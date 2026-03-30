@@ -13,16 +13,16 @@ export const Hero = () => {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 max-w-5xl p-10">
+      <div className="relative z-10 max-w-5xl px-10 py-6">
         <motion.div
-          className="bg-primary mb-8 h-px w-12"
+          className="bg-primary mb-6 h-px w-10 md:mb-8 md:w-12"
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           style={{ originX: 0 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
         />
         <motion.h1
-          className="font-display text-4xl leading-[1.2] font-bold text-white md:text-5xl lg:text-6xl"
+          className="font-display text-3xl leading-[1.2] font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15, duration: 0.6, ease: 'easeOut' }}
@@ -33,7 +33,7 @@ export const Hero = () => {
           </span>
         </motion.h1>
         <motion.h2
-          className="text-secondary mt-6 text-xl leading-loose font-normal"
+          className="text-secondary mt-4 text-base leading-relaxed font-normal sm:text-lg sm:leading-loose md:mt-6 md:text-xl"
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6, ease: 'easeOut' }}

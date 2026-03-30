@@ -14,11 +14,12 @@ export const Header = () => (
       src="/thinqbridge-logo.svg"
       alt="ThinqBridge logo"
       width={75}
-      height={'75'}
+      height={75}
       loading="eager"
+      className="w-12 sm:w-16 md:w-18.75"
       style={{ height: 'auto' }}
     />
-    <div className="inline-flex items-center gap-10">
+    <div className="inline-flex items-center gap-6 md:gap-10">
       <LetsTalkButton />
       <NavButton />
     </div>
@@ -28,10 +29,12 @@ export const Header = () => (
 const LetsTalkButton = () => (
   <Link
     href="#"
-    className="group border-primary hover:bg-primary flex items-center gap-3 rounded-full border-2 px-6 py-3 text-sm font-medium text-white transition-all duration-300"
+    className="group border-primary hover:bg-primary flex items-center gap-2 rounded-full border-2 px-3 py-2 font-medium text-white transition-all duration-300 sm:gap-3 sm:px-5 sm:py-2.5 md:px-6 md:py-3"
   >
-    <BubbleChatIcon className="text-primary size-6 group-hover:text-white" />
-    <span className="text-xl font-semibold text-white">Let&apos;s Talk</span>
+    <BubbleChatIcon className="text-primary size-5 group-hover:text-white sm:size-6" />
+    <span className="text-base font-semibold text-white sm:inline md:text-xl">
+      Let&apos;s Talk
+    </span>
   </Link>
 )
 

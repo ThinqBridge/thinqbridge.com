@@ -62,10 +62,10 @@ export const Navigation = () => {
     <AnimatePresence>
       {isOpen ? (
         <motion.div
-          className="absolute top-0 right-6 bottom-0 z-100 m-6 mx-auto my-6 flex w-md flex-col justify-between gap-4 rounded-2xl bg-white p-10"
-          initial={{ opacity: 0, x: 400 }}
+          className="fixed inset-0 z-100 flex w-full flex-col justify-between gap-4 rounded-none bg-white p-6 sm:absolute sm:inset-auto sm:top-0 sm:right-6 sm:bottom-0 sm:m-6 sm:w-md sm:rounded-2xl sm:p-10"
+          initial={{ opacity: 0, x: '100%' }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 400 }}
+          exit={{ opacity: 0, x: '100%' }}
           transition={{ duration: 0.35, ease: 'easeOut' }}
         >
           <NavigationHeader />
